@@ -17,7 +17,7 @@ open class BaseButton: UIButton {
         set {
             if newValue {
                 setStyle(with: buttonState.selectedStyle, state: .highlighted)
-            } else if !isSelected {
+            } else if isEnabled && !isSelected  {
                 setStyle(with: buttonState.selectedStyle, state: .normal)
             }
             super.isHighlighted = newValue

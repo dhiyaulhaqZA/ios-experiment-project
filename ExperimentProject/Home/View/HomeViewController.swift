@@ -32,7 +32,7 @@ class HomeViewController: UIViewController {
         }
         
         titleButton.onClick {
-            print("Title button clicked")
+            self.titleButton.isEnabled = false
         }
     }
 }
